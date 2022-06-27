@@ -9,7 +9,7 @@
     display: flex;
 }
 .header-details{
-    background-color: burlywood;
+    background-color: rgb(228, 204, 172);
     padding: 100px;
 }
 h1{
@@ -18,7 +18,7 @@ h1{
 }
 
 .header-details h2{
-    background-color: #454042;
+    background-color: #7a646d;
     color: #ffca06;
     width: fit-content;
     padding: 10px;
@@ -72,7 +72,7 @@ h5{
 .img-box{
     position: relative;
     height: inherit;
-    width: 480px;
+    width: 580px;
     flex-shrink: 0;
 }
 img{
@@ -139,7 +139,7 @@ h3{
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
-    color: #fff;
+    color: #ffca06;
 }
 
 
@@ -147,7 +147,7 @@ h3{
 .skill-progress-cover{
     position: relative;
     width: 50%;
-    border: 2px solid #ffca06;
+    border: 2px solid #fff;
     border-radius: 10px;
 }
 
@@ -156,24 +156,24 @@ h3{
     top: 0;
     left: 0;
     height: 100%;
-    background: #ffca06;
+    background: #fff;
     border-radius: 10px;
 }
 
 #communication{
-    width: 65%;
+    width: 85%;
 }
 
 #creativity{
-    width: 65%;
+    width: 80%;
 }
 
 #teamwork{
-    width: 65%;
+    width: 95%;
 }
 
 #organization{
-    width: 65%;
+    width: 70%;
 }
 
 /*For hobbies*/
@@ -181,13 +181,13 @@ h3{
 .hob{
     display: flex;
     justify-content: space-between;
-    color: #fff;
+    color: #ffca06;
     margin-bottom: 20px;
     width: 80%;
 }
 
 .icon{
-    color: #ffca06;
+    color: #edeae1;
 }
 
 .icon i{
@@ -207,4 +207,103 @@ h3{
 
 .title{
     color: #ffca06;
+}
+
+/*For experience*/
+.experience{
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.experience h5{
+    margin: 10px 0;
+    color: #fff;
+}
+
+.experience p{
+    color: rgb(140, 132, 132);
+}
+
+.date{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+
+/*For responsive*/
+
+@media(max-width:1230px){
+    h1{
+        font-size: 70px;
+    }
+    h2{
+        font-size: 20px;
+    }
+    .img-box{
+        width: 380px;
+    }
+}
+
+@media(max-width:1100px){
+    .header-details{
+        padding: 50px;
+    }
+    .main-skill-container{
+        padding: 20px 50px;
+    }
+    .body-container{
+        padding: 50px;
+    }
+}
+
+@media(max-width:980px){
+    .main-skill-item h4,
+    .main-skill-item h5{
+        font-size: 14px;
+    }
+    .img-box{
+        width: 280px;
+    }
+}
+
+@media(max-width:880px) {
+    h1{
+        font-size: 50px;
+    }
+    .header-details p{
+        margin-top: 20px;
+    }
+    .main-skill-item h4,
+    .main-skill-item h4,{
+        font-size: 10px;
+    }
+    .body-container{
+        grid-template-columns: 1fr;
+    }
+    .side-section{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 20px;
+    }
+    #contact{
+        margin-top: 0;
+    }
+    #education{
+        margin-top: 30px;
+    }
+}
+
+@media(max-width:740px){
+    .side-section{
+        grid-template-columns: 1fr;
+    }
+    .header-container{
+        flex-direction: column;
+    }
+    .img-box{
+        height: 500px;
+        width: 100%;
+    }
 }
